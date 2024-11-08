@@ -16,22 +16,19 @@ program BisectionMethod
   write (*, "(a10, 5a20)") "Iteration", "a", "b", "c", "f(c)", "Tolerance"
   write (*, *) repeat("-", 110)
 
-  i = 1
-  do while (abs(b - a) > tol .and. i <= max_iteration)
-    c = (a + b) / 2.0
+  do i = 1, max_iteration
+    c = a + (b - a) / 2.0
     fc = f(c)
 
-    write (*, "(i10, 5f20.8)") i, a, b, c, fc, abs(b-a)
+    write (*, "(i10, 5f20.8)") i, a, b, c, fc, abs(b - a) / 2
 
-    if (fc == 0.0) exit
+    if (fc == 0.0 .or. abs(b - a) / 2 < tol) exit
 
-    if (fa * fc < 0.0) then
-      b = c; fb = fc
-    else 
+    if (fa * fc > 0.0) then
       a = c; fa = fc
+    else  
+      b = c
     end if
-
-    i = i + 1
   end do
 
   write (*, *) repeat("-", 110)
