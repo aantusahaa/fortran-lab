@@ -29,7 +29,7 @@ program NewtonForwardDifference
     end do
     write(*, *)
   end do
-  write (*, *) repeat("-", n * 10 + 1)
+  write (*, *) repeat("-", n * 10)
 
   write(*, *) "Enter the interpolation point:"
   read (*, *) p
@@ -40,7 +40,7 @@ program NewtonForwardDifference
   result = table(1, 1)
 
   do i = 2, n
-    term = term * (u - i + 2)
+    term = term * (u - (i - 2))
     result = result + (term * table(1, i) / factorial(i - 1))
   end do
 
