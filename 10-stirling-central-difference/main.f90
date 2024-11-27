@@ -1,5 +1,6 @@
 ! Estimate f(x) at x = 33 using Stirling's central difference interpolation  for the data points:
 ! (25, 0.25), (30, 0.3), (35, 0.33), (40, 0.37), (45, 0.43)
+! Reference: https://theengineeringmaths.com/wp-content/uploads/2017/11/interpolation-web.pdf
 
 program StirlingCentralDifference
   implicit none
@@ -35,7 +36,7 @@ program StirlingCentralDifference
   read (*, *) p
 
   h = x(2) - x(1)
-  m = ceiling(n / 2.0)
+  m = (n + 1) / 2
   u = (p - x(m)) / h
   result = table(m, 1)
 
