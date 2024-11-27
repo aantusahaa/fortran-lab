@@ -21,7 +21,9 @@ This repository contains a collection of numerical methods implemented in modern
 - [Newton's Divided Difference Interpolation](./08-newton-divided-difference/main.f90)
 - [Lagrange's Interpolation](./09-lagrange-interpolation/main.f90)
 - [Stirling's Central Difference Interpolation](./10-stirling-central-difference/main.f90)
+- [Bessel's Central Difference Interpolation](./11-bessel-central-difference/main.f90)
 
 ## Reference used for algorithm
 
 - Numerical Analysis (9th edition) by Richard L. Burden and J. Douglas Faires
+- [Bessel's Central Difference Interpolation](<https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Celestial_Mechanics_(Tatum)/01%3A_Numerical_Methods/1.10%3A_1.10-Besselian_Interpolation>)
