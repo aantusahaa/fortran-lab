@@ -26,4 +26,5 @@ This repository contains a collection of numerical methods implemented in modern
 ## Reference used for algorithm
 
 - Numerical Analysis (9th edition) by Richard L. Burden and J. Douglas Faires
-- [Bessel's Central Difference Interpolation](<https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Celestial_Mechanics_(Tatum)/01%3A_Numerical_Methods/1.10%3A_1.10-Besselian_Interpolation>)
+- [Engineering Mathematics (Stirling's Central Difference Interpolation)](https://theengineeringmaths.com/wp-content/uploads/2017/11/interpolation-web.pdf)
+- [LibreTexts Physics (Bessel's Central Difference Interpolation)](<https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Celestial_Mechanics_(Tatum)/01%3A_Numerical_Methods/1.10%3A_1.10-Besselian_Interpolation>)
