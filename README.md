@@ -26,6 +26,7 @@ This repository contains a collection of numerical methods implemented in modern
 ### 3. Differentiation and Integration
 
 - [Forward Difference](./12-forward-difference/main.f90)
+- [Backward Difference](./13-backward-difference/main.f90)
 
 ## Reference used for algorithm
 
