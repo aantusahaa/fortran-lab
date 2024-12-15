@@ -23,6 +23,10 @@ This repository contains a collection of numerical methods implemented in modern
 - [Stirling's Central Difference Interpolation](./10-stirling-central-difference/main.f90)
 - [Bessel's Central Difference Interpolation](./11-bessel-central-difference/main.f90)
 
+### 3. Differentiation and Integration
+
+- [Forward Difference](./12-forward-difference/main.f90)
+
 ## Reference used for algorithm
 
 - Numerical Analysis (9th edition) by Richard L. Burden and J. Douglas Faires
