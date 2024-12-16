@@ -8,6 +8,8 @@ program WeddleRule
   write(*, *) "Enter a, b and number of sub intervals:"
   read(*, *) a, b, n
 
+  if (mod(n, 6) /= 0) stop "Sub interval should be multiple of 6"
+
   h = (b - a) / n
   sum = f(a) + f(b)
   x = a

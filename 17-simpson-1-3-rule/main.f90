@@ -8,6 +8,8 @@ program Simpsons13Rule
   write(*, *) "Enter a, b and number of sub intervals:"
   read(*, *) a, b, n
 
+  if (mod(n, 2) /= 0) stop "Sub interval should be multiple of 2"
+
   h = (b - a) / n
   sum = f(a) + f(b)
   x = a
