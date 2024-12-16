@@ -28,9 +28,11 @@ This repository contains a collection of numerical methods implemented in modern
 - [Forward Difference](./12-forward-difference/main.f90)
 - [Backward Difference](./13-backward-difference/main.f90)
 - [Central Divided Difference](./14-central-divided-difference/main.f90)
+- [Richardson Extrapolation](./15-richardson-extrapolation/main.f90)
 
 ## Reference used for algorithm
 
 - Numerical Analysis (9th edition) by Richard L. Burden and J. Douglas Faires
 - [Engineering Mathematics (Stirling's Central Difference Interpolation)](https://theengineeringmaths.com/wp-content/uploads/2017/11/interpolation-web.pdf)
 - [LibreTexts Physics (Bessel's Central Difference Interpolation)](<https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Celestial_Mechanics_(Tatum)/01%3A_Numerical_Methods/1.10%3A_1.10-Besselian_Interpolation>)
+- [LibreTexts Mathematics (Richardson Extrapolation)](<https://math.libretexts.org/Bookshelves/Calculus/CLP-2_Integral_Calculus_(Feldman_Rechnitzer_and_Yeager)/04%3A_Appendices/4.03%3A_C%3A_More_About_Numerical_Integration/4.3.01%3A_C.1%3A_Richardson_Extrapolation>)
