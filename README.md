@@ -32,6 +32,7 @@ This repository contains a collection of numerical methods implemented in modern
 - [Trapezoidal Rule](./16-trapezoidal-rule/main.f90)
 - [Simpson's 1/3 Rule](./17-simpson-1-3-rule/main.f90)
 - [Simpson's 3/8 Rule](./18-simpson-3-8-rule/main.f90)
+- [Weddle's Rule](./19-weddle-rule/main.f90)
 
 ## Reference used for algorithm
 
