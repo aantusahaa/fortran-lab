@@ -29,6 +29,7 @@ This repository contains a collection of numerical methods implemented in modern
 - [Backward Difference](./13-backward-difference/main.f90)
 - [Central Divided Difference](./14-central-divided-difference/main.f90)
 - [Richardson Extrapolation](./15-richardson-extrapolation/main.f90)
+- [Trapezoidal Rule](./16-trapezoidal-rule/main.f90)
 
 ## Reference used for algorithm
 
