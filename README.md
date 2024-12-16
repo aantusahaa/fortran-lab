@@ -30,6 +30,7 @@ This repository contains a collection of numerical methods implemented in modern
 - [Central Divided Difference](./14-central-divided-difference/main.f90)
 - [Richardson Extrapolation](./15-richardson-extrapolation/main.f90)
 - [Trapezoidal Rule](./16-trapezoidal-rule/main.f90)
+- [Simpson's 1/3 Rule](./17-simpson-1-3-rule/main.f90)
 
 ## Reference used for algorithm
 
