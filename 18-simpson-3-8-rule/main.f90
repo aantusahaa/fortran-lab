@@ -12,10 +12,9 @@ program Simpsons38Rule
 
   h = (b - a) / n
   sum = f(a) + f(b)
-  x = a
 
   do i = 1, n - 1
-    x = x + h
+    x = a + i * h
     if (mod(i, 3) == 0) then
       sum = sum + (2 * f(x))
     else
