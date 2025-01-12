@@ -14,7 +14,7 @@ program NewtonRaphson
 
   do i = 1, max_iteration
     if (f_prime(p0) == 0) stop "Please enter a different initial approximation"
-    
+
     p = p0 - f(p0) / f_prime(p0)
 
     write (*, "(i10, 3f20.8)") i, p0, p, abs(p - p0)
@@ -32,12 +32,12 @@ program NewtonRaphson
     real function f(x)
       real, intent(in) :: x
 
-      f = x ** 2
+      f = cos(x) - x
     end function f
 
     real function f_prime(x)
       real, intent(in) :: x
 
-      f_prime = 2 * x
+      f_prime = - sin(x) - 1
     end function f_prime
 end program NewtonRaphson
