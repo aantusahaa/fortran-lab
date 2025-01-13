@@ -2,14 +2,13 @@
 
 program TaylorPolynomial
   implicit none
-  real :: x, sum, term
+  real :: x, sum
   integer :: n, i
 
   write (*, *) "Enter x, Degree n:"
   read (*, * ) x, n
 
   sum = 0.0
-  term = 1.0
 
   do i = 0, n
     sum = sum + ((x ** i) / factorial(i)) ! e^x = 1 + x + (x^2 / 2!) + (x^3 / 3!) + ...
