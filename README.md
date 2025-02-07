@@ -37,6 +37,7 @@ This repository contains a collection of numerical methods implemented in modern
 ### 6. Initial Value Problem for ODE
 
 - [Picard's Method](./28-picard-method/main.f90)
+- [Euler's Method](./29-euler-method/main.f90)
 
 ## Reference used for algorithm
 
