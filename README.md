@@ -34,6 +34,10 @@ This repository contains a collection of numerical methods implemented in modern
 - [Simpson's 3/8 Rule](./18-simpson-3-8-rule/main.f90)
 - [Weddle's Rule](./19-weddle-rule/main.f90)
 
+### 6. Initial Value Problem for ODE
+
+- [Picard's Method](./28-picard-method/main.f90)
+
 ## Reference used for algorithm
 
 - Numerical Analysis (9th edition) by Richard L. Burden and J. Douglas Faires
