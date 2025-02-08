@@ -39,6 +39,7 @@ This repository contains a collection of numerical methods implemented in modern
 - [Picard's Method](./28-picard-method/main.f90)
 - [Euler's Method](./29-euler-method/main.f90)
 - [Taylor's Method](./30-taylor-method/main.f90)
+- [2nd Order Runge-Kutta Method](./31-runge-kutta-order-2/main.f90)
 
 ## Reference used for algorithm
 
