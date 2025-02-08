@@ -28,18 +28,18 @@ program PicardMethod
       x = real(i) * step
 
       if (n == 1) then
-        ! First iteration (n=0): y_1(x) = y(0) + integral from 0 to x of (y_0(t))^2 dt
+        ! First iteration (n=1): y_1(x) = y(0) + integral from 0 to x of (y_0(t))^2 dt
         ! Using y_0(t) = 1, we get y_1(x) = 1 + integral from 0 to x of (1)^2 dt = 1 + x
         y_i = 1 + x
 
       else if (n == 2) then
-        ! Second iteration (n=1): y_2(x) = y(0) + integral from 0 to x of (y_1(t))^2 dt
+        ! Second iteration (n=2): y_2(x) = y(0) + integral from 0 to x of (y_1(t))^2 dt
         ! Using y_1(t) = 1 + t, we get y_2(x) = 1 + integral from 0 to x of (1+t)^2 dt
         ! y_2(x) = 1 + [t + t^2 + t^3/3]
         y_i = 1 + x + x**2 + (x**3) / 3.0
 
       else if (n == 3) then
-        ! Third iteration (n=2): y_3(x) = y(0) + integral from 0 to x of (y_2(t))^2 dt
+        ! Third iteration (n=3): y_3(x) = y(0) + integral from 0 to x of (y_2(t))^2 dt
         ! Using y_2(t) = 1 + t + t^2 + t^3/3, we get y_3(x) = 1 + integral from 0 to x of (1 + t + t^2 + t^3/3)^2 dt
         ! y_3(x) = 1 + [t + t^2 + t^3 + (2/3)t^4 + (1/3)t^5 + (1/9)t^6 + (1/63)t^7]
         y_i = 1 + x + x**2 + x**3 + (2.0 / 3.0) * x**4 + (1.0 / 3.0) * x**5 + (1.0 / 9.0) * x**6 + (1.0 / 63.0) * x**7
@@ -50,6 +50,5 @@ program PicardMethod
     end do ! End loop for x values
     write(*, *) separator
   end do ! End loop for Picard iterations
-
-
+  
 end program PicardMethod
