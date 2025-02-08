@@ -6,15 +6,14 @@ program EulerMethod
 
   real :: a, b, h, x, y
   integer :: n, i
-  character(45) :: separator = repeat("-", 45)
+  character(30) :: separator = repeat("-", 30)
 
   write (*, *) "Enter a, b, h, y(a):"
   read (*, *) a, b, h, y
 
-  write (*, *) separator
-  write (*, *) "Euler's Method for dy/dx = x + y, y(0) = 1"
-  write (*, *) separator
   write (*, *) ! prints a new line
+  write (*, *) "Euler's Method"
+  write (*, *) separator
   write (*, *) "Step |     x     |     y"
   write (*, *) separator
 
