@@ -42,6 +42,7 @@ This repository contains a collection of numerical methods implemented in modern
 - [2nd Order Runge-Kutta Method](./31-runge-kutta-order-2/main.f90)
 - [4th Order Runge-Kutta Method](./32-runge-kutta-order-4/main.f90)
 - [Adams-Bashforth Method](./33-adams-bashforth-method/main.f90)
+- [Extrapolation Method](./34-extrapolation-method/main.f90)
 
 ## Reference used for algorithm
 
