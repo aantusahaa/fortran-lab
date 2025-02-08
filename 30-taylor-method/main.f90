@@ -1,7 +1,7 @@
 ! Solve the initial value problem for the following differential equation using Taylor's method (2nd order):
 ! dy/dx = y - x^2 where y(0) = 0
 
-program EulerMethod
+program TaylorMethod
   implicit none
 
   real :: a, b, h, x, y
@@ -37,4 +37,4 @@ program EulerMethod
       real, intent(in) :: x, y
       f_prime = f(x,y) - 2*x
     end function f_prime
-end program EulerMethod
+end program TaylorMethod
