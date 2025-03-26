@@ -34,6 +34,10 @@ This repository contains a collection of numerical methods implemented in modern
 - [Simpson's 3/8 Rule](./18-simpson-3-8-rule/main.f90)
 - [Weddle's Rule](./19-weddle-rule/main.f90)
 
+### 4. Solution of Linear Systems
+
+- [Gaussian Elimination with Backward Substitution](./20-gaussian-elimination-with-backward-substitution/main.f90)
+
 ### 6. Initial Value Problem for ODE
 
 - [Picard's Method](./28-picard-method/main.f90)
