@@ -37,6 +37,7 @@ This repository contains a collection of numerical methods implemented in modern
 ### 4. Solution of Linear Systems
 
 - [Gaussian Elimination with Backward Substitution](./20-gaussian-elimination-with-backward-substitution/main.f90)
+- [Gaussian Elimination with LU Factorization](./21-gaussian-elimination-with-lu-factorization/main.f90)
 
 ### 6. Initial Value Problem for ODE
 
