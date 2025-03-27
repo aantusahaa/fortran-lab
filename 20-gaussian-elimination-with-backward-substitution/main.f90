@@ -8,13 +8,13 @@ program GaussianEliminationWithBackwardSubstitution
   implicit none
 
   integer :: n, i, j, k, p
-  real, allocatable :: a(:,:), x(:)
+  real, allocatable :: A(:,:), x(:)
   real :: m
 
   write (*, *) "Enter the number of equations:"
   read (*, *) n
 
-  allocate(a(n, n + 1), x(n)) ! Allocate necessary memory
+  allocate(A(n, n + 1), x(n)) ! Allocate necessary memory
 
   write (*, *) "Enter the augmented matrix [A|b]:"
   read (*, *) ((A(i, j), j = 1, n + 1), i = 1, n)
@@ -22,7 +22,7 @@ program GaussianEliminationWithBackwardSubstitution
   do i = 1, n - 1
     p = -1 ! Indicates we haven't found any pivot
     do k = i, n
-      if (a(k, i) /= 0.0) then 
+      if (A(k, i) /= 0.0) then 
         p = k
         exit
       end if
@@ -30,26 +30,26 @@ program GaussianEliminationWithBackwardSubstitution
 
     if (p == -1) stop "No unique solution exists" ! No pivot was found
 
-    if (p /= i) then  ! Swap a(p) <-> a(i)
+    if (p /= i) then  ! Swap A(p) <-> A(i)
       do k = 1, n + 1
-        m = a(p, k) ! Using m as temporary variable for swapping
-        a(p, k) = a(i, k)
-        a(i, k) = m
+        m = A(p, k) ! Using m as temporary variable for swapping
+        A(p, k) = A(i, k)
+        A(i, k) = m
       end do
     end if
 
     do j = i + 1, n
-      m = a(j, i) / a(i, i)
-      a(j, i:n+1) = a(j, i:n+1) - m * a(i, i:n+1) ! a(j) - m * a(i) -> a(j)
+      m = A(j, i) / A(i, i)
+      A(j, i:n+1) = A(j, i:n+1) - m * A(i, i:n+1) ! A(j) - m * A(i) -> A(j)
     end do
   end do
 
-  if (a(n, n) == 0) stop "No unique solution exists" ! Infinite solutions
+  if (A(n, n) == 0) stop "No unique solution exists" ! Infinite solutions
 
   ! Backward Substitution
-  x(n) = a(n, n + 1) / a(n, n)
+  x(n) = A(n, n + 1) / A(n, n)
   do i = n - 1, 1, -1
-    x(i) = (a(i, n + 1) - sum(a(i, i+1:n) * x(i+1:n))) / a(i, i)
+    x(i) = (A(i, n + 1) - sum(A(i, i+1:n) * x(i+1:n))) / A(i, i)
   end do
 
   write (*, *) "Solution Vector:", x
