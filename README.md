@@ -40,6 +40,7 @@ This repository contains a collection of numerical methods implemented in modern
 - [Gaussian Elimination with LU Factorization](./21-gaussian-elimination-with-lu-factorization/main.f90)
 - [Jacobi Method](./22-jacobi/main.f90)
 - [Gauss-Seidel Method](./23-gauss-seidel/main.f90)
+- [Successive Over-Relaxation(SOR) Method](./24-sor/main.f90)
 
 ### 6. Initial Value Problem for ODE
 
