@@ -42,6 +42,10 @@ This repository contains a collection of numerical methods implemented in modern
 - [Gauss-Seidel Method](./23-gauss-seidel/main.f90)
 - [Successive Over-Relaxation(SOR) Method](./24-sor/main.f90)
 
+### 5. Solution of Nonlinear Systems
+
+- [Fixed Point Iteration Method](./25-fixed-point-iteration/main.f90)
+
 ### 6. Initial Value Problem for ODE
 
 - [Picard's Method](./28-picard-method/main.f90)
