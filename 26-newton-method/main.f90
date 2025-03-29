@@ -2,7 +2,7 @@
 ! x^2 + y - 3 = 0
 ! x - y + 1 = 0
 
-program FixedPointIteration
+program Newton
   implicit none
 
   integer :: i, max
@@ -63,4 +63,4 @@ program FixedPointIteration
       Ainv(1,2) = -detinv * A(1,2)
       Ainv(2,2) = +detinv * A(1,1)
     end function inverse
-end program FixedPointIteration
+end program Newton
