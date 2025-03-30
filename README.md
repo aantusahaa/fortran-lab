@@ -59,6 +59,10 @@ This repository contains a collection of numerical methods implemented in modern
 - [Adaptive Euler Method](./35-adaptive-euler-method/main.f90)
 - [Adaptive Runge Kutta Method](./36-adaptive-runge-kutta-method/main.f90)
 
+### 7. Boundary Value Problem
+
+- [Linear Shooting Method](./37-linear-shooting/main.f90)
+
 ## Reference used for algorithm
 
 - Numerical Analysis (9th edition) by Richard L. Burden and J. Douglas Faires
