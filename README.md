@@ -62,6 +62,7 @@ This repository contains a collection of numerical methods implemented in modern
 ### 7. Boundary Value Problem
 
 - [Linear Shooting Method](./37-linear-shooting/main.f90)
+- [Nonlinear Shooting Method](./38-nonlinear-shooting/main.f90)
 
 ## Reference used for algorithm
 
