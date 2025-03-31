@@ -46,6 +46,7 @@ This repository contains a collection of numerical methods implemented in modern
 
 - [Fixed Point Iteration Method](./25-fixed-point-iteration/main.f90)
 - [Newton's Method](./26-newton-method/main.f90)
+- [Quasi-Newton Method (Good Broyden)](./27-broyden/main.f90)
 
 ### 6. Initial Value Problem for ODE
 
