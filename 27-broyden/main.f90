@@ -17,9 +17,9 @@ program Broyden
   write (*, *) "Iteration  table"
   write (*, *) repeat("-", 50)
 
+  jR = J(x)
   do i = 1, max
     fR = F(x)
-    jR = J(x)
     s = matmul(inverse(jR), -fR)
     x = x + s
     z = F(x) - fR
